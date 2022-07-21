@@ -17,7 +17,8 @@
                 <div class="tips__column tips__column_1">
                     <div class="tips__bill bill">
                         <div class="bill__lable lable">Счёт</div>
-                        <input type="number"  id="bill" class="bill__input">
+                        <input type="text"  id="bill" class="bill__input">
+                        <span class="error__message">должно быть целое число больше 0</span>
                     </div>
                     <div class="tips__percent percent">
                         <div class="percent__lable lable">Выберите % чаевых</div>
@@ -27,12 +28,14 @@
                             <div class="percent__item" >15%</div>
                             <div class="percent__item">25%</div>
                             <div class="percent__item">50%</div>
-                            <input type="number" class="percent__item percent__input" id="percent" placeholder="" min='0' max="100">
+                            <input type="text" class="percent__item percent__input" id="percent">
+                            <span class="error error_percent error__message">должно быть целое число от 0 до 100</span>
                         </div>
                     </div>
-                    <div class="tips__amount ">
+                    <div class="tips__amount">
                         <div class="amount__lable lable">Количество людей</div>
-                        <input type="number" class="amount__input" id="amount">
+                        <input type="text" class="amount__input" id="amount">
+                        <span class="error error__message">должно быть целое число больше 0</span>
                     </div>
                 </div>
                 <div class="tips__column tips__column_2">

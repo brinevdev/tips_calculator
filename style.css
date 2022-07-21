@@ -62,6 +62,7 @@ input {
 }
 .percent__items {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(3,1fr);
     row-gap:  15px;
 }
@@ -148,6 +149,26 @@ input {
 }
 .tips__button:hover {
     background-color: #06f0d0;
+}
+.bill__input.error {
+    position: relative;
+    outline: 2px solid red;
+}
+.error__message {
+    display: none;
+    color: red;
+    text-align: end;
+    padding-top: 5px;
+}
+.error ~ span.error__message{
+    display: block;
+}
+.error_percent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    padding-top: 5px;
 }
 @media(max-width:768px){
     .tips__body  {
